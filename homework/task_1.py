@@ -1,4 +1,4 @@
-# Task: Approximate and analyze the second derivative using the central difference method.
+# Task: Create functions that approximate the second derivative using the central difference method, and visualize the accuracy for various step sizes.
 
 # 1. Define a function called central_difference_second_derivative that takes a function f, a point x,
 # and a small value h as input, and outputs the approximate second derivative of f at x using the central difference method.
