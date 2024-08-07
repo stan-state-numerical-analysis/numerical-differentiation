@@ -11,11 +11,16 @@
 
 # 3. The function below takes in the original function, its true derivative, an interval of x-values in the form of a 2-element list, and list of h-values.
 # It will plot the true first derivative on the interval as well as the approximations for different h-values.
-# Finish the function definition below by completing the three TO DOs.
+# Finish the function definition below by completing the four TO DOs.
 
 def plot_derivative_approximations(func, true_derivative, interval, h_values):
+
+    # TODO: Define a list called x_values that contains 1000 equally spaced values spanning the given interval.
+
+
     
-    # TODO: Define a list called true_derivatives that contains the true derivative at each value in the interval.
+    # TODO: Define a list called true_derivatives that contains the true derivative at each value in x_values.
+
     
 
     plt.figure(figsize=(14, 8))
@@ -26,7 +31,7 @@ def plot_derivative_approximations(func, true_derivative, interval, h_values):
 
     # TODO: For each h-value, define a list called approx_derivatives that approximates the true
     # derivative using the central difference method (with the given h-value) at each x-value in
-    # the interval. Then plot the approximate derivative and give it the label Approx Derivative (h=#)
+    # x_values. Then plot the approximate derivative and give it the label Approx Derivative (h=#)
     # where # should be replaced with the corresponding value of h.
 
 
