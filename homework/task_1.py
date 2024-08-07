@@ -18,7 +18,7 @@
 # 4. Define a function called plot_second_derivative_approximation that takes a function f, its true second derivative function f_dd,
 # a point x, and a list of h values. The function should plot the estimated second derivative using the central difference method
 # and the true second derivative at x for the given h values. The variable names and plot settings should be identical to those used in class,
-# besides the plot label, axhline label, ylabel, and title. Be sure to import the necessary package.
+# besides the plot label, axhline label, ylabel and title. Be sure to import the necessary package.
 
 
 
@@ -29,6 +29,3 @@
 # 6. Define a function called plot_absolute_error that takes a function f, its true second derivative function f_dd, a point x,
 # and a list of h values. The function should plot the absolute error of the estimated second derivative at x for the given h values.
 # The variable names and plot settings should be identical to those used in class, besides the title.
-
-
-
