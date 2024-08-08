@@ -9,7 +9,11 @@
 
 
 
-# 3. The function below takes in the original function, its true derivative, an interval of x-values in the form of a 2-element list, and list of h-values.
+# 3. Import the numpy package under the correct alias.
+
+
+
+# 4. The function below takes in the original function, its true derivative, an interval of x-values in the form of a 2-element list, and list of h-values.
 # It will plot the true first derivative on the interval as well as the approximations for different h-values.
 # Finish the function definition below by completing the four TO DOs.
 
