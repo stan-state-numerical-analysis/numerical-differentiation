@@ -15,6 +15,7 @@
 
 
 # 4. Define a variable called x_value equal to 4 and a variable called h_values equal to the list of numbers 1, 0.5, 0.25,...,2^(-10).
+# Use a list comprehension to define h_values.
 
 
 
