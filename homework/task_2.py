@@ -14,10 +14,14 @@
 
 
 
-# 4. Use the plot_second_derivative_approximation function from the task_1 module to visualize how well the central difference method
-# approximates the second derivative of the example_function at the x-value 4 with h-values: 1, 0.5, 0.25,...,2^(-10).
+# 4. Define a variable called x_value equal to 4 and a variable called h_values equal to the list of numbers 1, 0.5, 0.25,...,2^(-10).
 
 
 
-# 5. Use the plot_absolute_difference function from the task_1 module to visualize the absolute error of the central
+# 5. Use the plot_second_derivative_approximation function from the task_1 module to visualize how well the central difference method
+# approximates the second derivative of the example_function at x_value 4 with h_values defined in 4.
+
+
+
+# 6. Use the plot_absolute_difference function from the task_1 module to visualize the absolute error of the central
 # difference method in approximating the second derivative of the example_function at the x-value 4 with h-values: 1, 0.5, 0.25,...,2^(-10).
