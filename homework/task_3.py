@@ -19,7 +19,7 @@
 
 def plot_derivative_approximations(func, true_derivative, interval, h_values):
 
-    # TODO: Define a list called x_values that contains 1000 equally spaced values spanning the given interval.
+    # TODO: Define a list called x_values that contains 1000 equally spaced values spanning the given interval (use numpy).
 
 
     
