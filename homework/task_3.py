@@ -29,7 +29,7 @@ def plot_derivative_approximations(func, true_derivative, interval, h_values):
 
     plt.figure(figsize=(14, 8))
   
-    # TODO: Plot the true derivative in the color black with the label True Derivative.
+    # TODO: Plot the true derivative in the color black with the label True Derivative and linewidth of 4.
 
   
 
