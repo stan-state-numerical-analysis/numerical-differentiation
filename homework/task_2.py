@@ -24,5 +24,5 @@
 
 
 
-# 6. Use the plot_absolute_difference function from the task_1 module to visualize the absolute error of the central
+# 6. Use the plot_absolute_error function from the task_1 module to visualize the absolute error of the central
 # difference method in approximating the second derivative of the example_function at the x-value 4 with h-values: 1, 0.5, 0.25,...,2^(-10).
