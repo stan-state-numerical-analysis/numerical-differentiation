@@ -1,0 +1,37 @@
+name: Autograding Tests
+'on':
+- push
+- repository_dispatch
+- workflow_dispatch
+permissions:
+  checks: write
+  actions: read
+  contents: read
+jobs:
+  run-autograding-tests:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-classroom[bot]'
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: Python Tests
+      id: python-tests
+      uses: classroom-resources/autograding-command-grader@v1
+      with:
+        test-name: Python Tests for Task 1
+        setup-command: apt-get update; apt-get install -y wget; pip install pytest;
+          wget https://raw.githubusercontent.com/jessicadesilva/test-repo/main/tests_1/test_task_1.py
+          -O homework/test_task_1.py;
+          wget https://raw.githubusercontent.com/jessicadesilva/test-repo/main/tests_1/test_task_2.py
+          -O homework/test_task_2.py;
+          wget https://raw.githubusercontent.com/jessicadesilva/test-repo/main/tests_1/test_task_3.py
+          -O homework/test_task_3.py
+        command: cd homework; python -m pytest --tb=native
+        timeout: 10
+        max-score: 3
+    - name: Autograding Reporter
+      uses: classroom-resources/autograding-grading-reporter@v1
+      env:
+        PYTHON-TESTS_RESULTS: "${{steps.python-tests.outputs.result}}"
+      with:
+        runners: python-tests
