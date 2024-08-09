@@ -27,7 +27,7 @@ def plot_derivative_approximations(func, true_derivative, interval, h_values):
 
     
 
-    plt.figure(figsize=(14, 8))
+    fig, ax = plt.subplots(figsize=(14, 8))
   
     # TODO: Plot the true derivative in the color black with the label True Derivative and linewidth of 4.
 
@@ -39,9 +39,10 @@ def plot_derivative_approximations(func, true_derivative, interval, h_values):
     # where # should be replaced with the corresponding value of h.
 
 
-    plt.xlabel('x')
-    plt.ylabel('Derivative')
-    plt.title('First Derivative Approximation Using Central Difference Method')
-    plt.legend()
-    plt.grid(True)
-    plt.show()
+    ax.set_xlabel("x")
+    ax.set_ylabel("Derivative")
+    ax.set_title("First Derivative Approximation Using Central Difference Method")
+    ax.legend()
+    ax.grid(True)
+
+    return fig
